@@ -20,7 +20,7 @@ report_saved device_id=DEV00001 sample_id=1001 status=valid
   "calibration_rmse": 0.166172,
   "core_rmse": 0.248634,
   "iterations": 27,
-  "content_sha256": "1ec6fe47c7907b876dfb8fe99dccb4d636b51581e28249e288116a526c984973"
+  "content_sha256": "bd7ac028aa6a1be2f513310be3dab9d13924e10717646d453bbb0fe90c78cffd"
 }
 test_bad_image_and_unknown_batch (__main__.HttpTests.test_bad_image_and_unknown_batch) ... capture_saved device_id=DEV00001 sample_id=1002 packet_bytes=76
 report_saved device_id=DEV00001 sample_id=1002 status=invalid
@@ -55,6 +55,6 @@ test_packet_round_trip (__main__.ModelTests.test_packet_round_trip) ... ok
 test_repository_conflict_is_atomic (__main__.ModelTests.test_repository_conflict_is_atomic) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 5.551s
+Ran 16 tests in 5.335s
 
 OK

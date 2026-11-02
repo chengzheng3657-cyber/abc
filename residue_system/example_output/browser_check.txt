@@ -1,6 +1,1 @@
-calibration_started batch_id=DEMO0001
-capture_saved device_id=DEV00001 sample_id=367752120 packet_bytes=76
-report_saved device_id=DEV00001 sample_id=367752120 status=valid
-capture_saved device_id=DEV00001 sample_id=3541695533 packet_bytes=76
-report_saved device_id=DEV00001 sample_id=3541695533 status=valid
-浏览器检查通过：独立HTML示例、服务连接、批次标定、检测、图像重构、JSON下载及导入、移动端布局；输出1.4663 ng/mL
+界面检查通过：截图区域与样例入口已删除；无预置结果；拒绝演示来源报告；输入校验、无效结果显示、报告下载与移动端布局正常。渲染测试使用无定量值的接口契约测试数据。

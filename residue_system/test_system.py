@@ -58,6 +58,9 @@ class HttpTests(unittest.TestCase):
             self.assertIn('text/html', response.getheader('Content-Type'))
             self.assertIn('<title>组织残留快检系统</title>', document)
             self.assertNotIn('<!--', document)
+            self.assertNotIn('id="fixtures"', document)
+            self.assertNotIn('id="endpointPanel"', document)
+            self.assertNotIn('模拟', document)
             self.assertTrue(all(line.strip() for line in document.splitlines()))
         finally:
             connection.close()
