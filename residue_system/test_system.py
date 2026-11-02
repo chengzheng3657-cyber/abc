@@ -47,6 +47,20 @@ class HttpTests(unittest.TestCase):
             return response.status, json.loads(response.read())
         finally:
             connection.close()
+    def test_frontend_document(self):
+        port = int(self.base.rsplit(':', 1)[-1])
+        connection = http.client.HTTPConnection('127.0.0.1', port, timeout=10)
+        try:
+            connection.request('GET', '/')
+            response = connection.getresponse()
+            document = response.read().decode('utf-8')
+            self.assertEqual(response.status, 200)
+            self.assertIn('text/html', response.getheader('Content-Type'))
+            self.assertIn('<title>组织残留快检系统</title>', document)
+            self.assertNotIn('<!--', document)
+            self.assertTrue(all(line.strip() for line in document.splitlines()))
+        finally:
+            connection.close()
     def test_report_and_idempotency(self):
         self.assertEqual(self.report['status'], 'valid')
         self.assertLess(abs(self.report['concentration'] - 1.5), 0.08)

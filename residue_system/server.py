@@ -30,7 +30,16 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(content)
         self.close_connection = True
     def do_GET(self):
-        if self.path == '/health':
+        if self.path in ('/', '/index.html'):
+            content = Path(__file__).with_name('index.html').read_bytes()
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/html; charset=utf-8')
+            self.send_header('Content-Length', str(len(content)))
+            self.send_header('Cache-Control', 'no-store')
+            self.send_header('X-Content-Type-Options', 'nosniff')
+            self.end_headers()
+            self.wfile.write(content)
+        elif self.path == '/health':
             self.respond(200, {'status': 'ok', 'system': '组织残留快检系统', 'api_version': 1})
         else:
             self.respond(404, {'error': '接口不存在'})

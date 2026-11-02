@@ -20,7 +20,7 @@ report_saved device_id=DEV00001 sample_id=1001 status=valid
   "calibration_rmse": 0.166172,
   "core_rmse": 0.248634,
   "iterations": 27,
-  "content_sha256": "903899627771d45102b6fb927b9187524fb5d5f72e64f686444ccbb65fb5c37d"
+  "content_sha256": "1ec6fe47c7907b876dfb8fe99dccb4d636b51581e28249e288116a526c984973"
 }
 test_bad_image_and_unknown_batch (__main__.HttpTests.test_bad_image_and_unknown_batch) ... capture_saved device_id=DEV00001 sample_id=1002 packet_bytes=76
 report_saved device_id=DEV00001 sample_id=1002 status=invalid
@@ -38,6 +38,7 @@ test_changed_calibration_is_rejected (__main__.HttpTests.test_changed_calibratio
 ok
 test_crc_and_capture_conflict (__main__.HttpTests.test_crc_and_capture_conflict) ... ok
 test_database_restart (__main__.HttpTests.test_database_restart) ... ok
+test_frontend_document (__main__.HttpTests.test_frontend_document) ... ok
 test_malformed_json (__main__.HttpTests.test_malformed_json) ... ok
 test_packet_before_capture (__main__.HttpTests.test_packet_before_capture) ... report_saved device_id=DEV00001 sample_id=1200 status=valid
 capture_saved device_id=DEV00001 sample_id=1200 packet_bytes=76
@@ -54,6 +55,6 @@ test_packet_round_trip (__main__.ModelTests.test_packet_round_trip) ... ok
 test_repository_conflict_is_atomic (__main__.ModelTests.test_repository_conflict_is_atomic) ... ok
 
 ----------------------------------------------------------------------
-Ran 15 tests in 5.403s
+Ran 16 tests in 5.551s
 
 OK
