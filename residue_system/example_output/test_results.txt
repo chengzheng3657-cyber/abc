@@ -1,0 +1,59 @@
+simulation_calibration_started
+calibration_started batch_id=DEMO0001
+capture_saved device_id=DEV00001 sample_id=1001 packet_bytes=76
+simulation_packet_received bytes=76
+report_saved device_id=DEV00001 sample_id=1001 status=valid
+{
+  "system": "组织残留快检系统",
+  "sample_id": 1001,
+  "data_mode": "simulation",
+  "known_concentration": 1.5,
+  "estimated_concentration": 1.4663,
+  "unit": "ng/mL",
+  "status": "valid",
+  "packet_bytes": 76,
+  "core_count": 6,
+  "calibration_range": [
+    0.0,
+    3.0
+  ],
+  "calibration_rmse": 0.166172,
+  "core_rmse": 0.248634,
+  "iterations": 27,
+  "content_sha256": "903899627771d45102b6fb927b9187524fb5d5f72e64f686444ccbb65fb5c37d"
+}
+test_bad_image_and_unknown_batch (__main__.HttpTests.test_bad_image_and_unknown_batch) ... capture_saved device_id=DEV00001 sample_id=1002 packet_bytes=76
+report_saved device_id=DEV00001 sample_id=1002 status=invalid
+ok
+test_calibration_range (__main__.HttpTests.test_calibration_range) ... capture_saved device_id=DEV00001 sample_id=1100 packet_bytes=76
+report_saved device_id=DEV00001 sample_id=1100 status=valid
+capture_saved device_id=DEV00001 sample_id=1101 packet_bytes=76
+report_saved device_id=DEV00001 sample_id=1101 status=valid
+capture_saved device_id=DEV00001 sample_id=1102 packet_bytes=76
+report_saved device_id=DEV00001 sample_id=1102 status=valid
+capture_saved device_id=DEV00001 sample_id=1110 packet_bytes=76
+report_saved device_id=DEV00001 sample_id=1110 status=invalid
+ok
+test_changed_calibration_is_rejected (__main__.HttpTests.test_changed_calibration_is_rejected) ... calibration_started batch_id=DEMO0001
+ok
+test_crc_and_capture_conflict (__main__.HttpTests.test_crc_and_capture_conflict) ... ok
+test_database_restart (__main__.HttpTests.test_database_restart) ... ok
+test_malformed_json (__main__.HttpTests.test_malformed_json) ... ok
+test_packet_before_capture (__main__.HttpTests.test_packet_before_capture) ... report_saved device_id=DEV00001 sample_id=1200 status=valid
+capture_saved device_id=DEV00001 sample_id=1200 packet_bytes=76
+ok
+test_parallel_retries (__main__.HttpTests.test_parallel_retries) ... capture_saved device_id=DEV00001 sample_id=1300 packet_bytes=76
+report_saved device_id=DEV00001 sample_id=1300 status=valid
+ok
+test_report_and_idempotency (__main__.HttpTests.test_report_and_idempotency) ... ok
+test_batch_parameter_validation (__main__.ModelTests.test_batch_parameter_validation) ... ok
+test_concentration_derivative (__main__.ModelTests.test_concentration_derivative) ... ok
+test_image_alignment (__main__.ModelTests.test_image_alignment) ... ok
+test_legacy_database_is_preserved (__main__.ModelTests.test_legacy_database_is_preserved) ... ok
+test_packet_round_trip (__main__.ModelTests.test_packet_round_trip) ... ok
+test_repository_conflict_is_atomic (__main__.ModelTests.test_repository_conflict_is_atomic) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 5.403s
+
+OK

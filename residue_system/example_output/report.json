@@ -1,0 +1,221 @@
+{
+  "system": "组织残留快检系统",
+  "sample_id": 1793586513,
+  "device_id": "DEV00001",
+  "batch_id": "DEMO0001",
+  "model_version": "model-v1",
+  "calibration_range": [
+    0.0,
+    3.0
+  ],
+  "data_mode": "simulation",
+  "method": "transport_binding_1d",
+  "sample_time": "2026-11-02T02:28:33+00:00",
+  "generated_at": "2026-11-02T02:28:34.327481+00:00",
+  "location": {
+    "latitude": 31.2304,
+    "longitude": 121.4737
+  },
+  "status": "valid",
+  "concentration": 1.4663,
+  "unit": "ng/mL",
+  "raw_concentration": 1.466288,
+  "recovery_factor": 1.0,
+  "packet_bytes": 76,
+  "core_count": 6,
+  "solver": {
+    "status": "valid",
+    "reasons": [],
+    "converged": true,
+    "stop_reason": "interval_tolerance",
+    "method": "bounded_scalar",
+    "concentration": 1.4662878684177825,
+    "weighted_mse": 0.0640273180793423,
+    "core_rmse": 0.24863377994359542,
+    "loss_gradient": -5.053677411075453e-06,
+    "control_valid": true,
+    "background_valid": true,
+    "target_observed": true,
+    "calibration_range": [
+      0.0,
+      3.0
+    ],
+    "iterations": 27,
+    "evaluations": 31,
+    "history": [
+      {
+        "evaluation": 1,
+        "loss": 0.68515926,
+        "concentration": 1.14589803
+      },
+      {
+        "evaluation": 2,
+        "loss": 0.41731496,
+        "concentration": 1.85410197
+      },
+      {
+        "evaluation": 3,
+        "loss": 1.11779441,
+        "concentration": 2.29179607
+      },
+      {
+        "evaluation": 4,
+        "loss": 0.10811783,
+        "concentration": 1.58359214
+      },
+      {
+        "evaluation": 5,
+        "loss": 0.07395516,
+        "concentration": 1.41640786
+      },
+      {
+        "evaluation": 6,
+        "loss": 0.17271443,
+        "concentration": 1.3130823
+      },
+      {
+        "evaluation": 7,
+        "loss": 0.06474221,
+        "concentration": 1.48026657
+      },
+      {
+        "evaluation": 8,
+        "loss": 0.07395143,
+        "concentration": 1.51973343
+      },
+      {
+        "evaluation": 9,
+        "loss": 0.06443729,
+        "concentration": 1.45587472
+      },
+      {
+        "evaluation": 10,
+        "loss": 0.0665341,
+        "concentration": 1.44079972
+      },
+      {
+        "evaluation": 11,
+        "loss": 0.06403181,
+        "concentration": 1.46519158
+      },
+      {
+        "evaluation": 12,
+        "loss": 0.06410781,
+        "concentration": 1.47094971
+      },
+      {
+        "evaluation": 13,
+        "loss": 0.06410863,
+        "concentration": 1.46163285
+      },
+      {
+        "evaluation": 14,
+        "loss": 0.06403184,
+        "concentration": 1.46739099
+      },
+      {
+        "evaluation": 15,
+        "loss": 0.06404988,
+        "concentration": 1.46383227
+      },
+      {
+        "evaluation": 16,
+        "loss": 0.06402756,
+        "concentration": 1.46603168
+      },
+      {
+        "evaluation": 17,
+        "loss": 0.06402757,
+        "concentration": 1.46655089
+      },
+      {
+        "evaluation": 18,
+        "loss": 0.06402856,
+        "concentration": 1.46571079
+      },
+      {
+        "evaluation": 19,
+        "loss": 0.06402733,
+        "concentration": 1.46623
+      },
+      {
+        "evaluation": 20,
+        "loss": 0.06402733,
+        "concentration": 1.46635257
+      },
+      {
+        "evaluation": 21,
+        "loss": 0.06402739,
+        "concentration": 1.46615425
+      },
+      {
+        "evaluation": 22,
+        "loss": 0.06402732,
+        "concentration": 1.46627682
+      },
+      {
+        "evaluation": 23,
+        "loss": 0.06402732,
+        "concentration": 1.46630575
+      },
+      {
+        "evaluation": 24,
+        "loss": 0.06402732,
+        "concentration": 1.46625893
+      },
+      {
+        "evaluation": 25,
+        "loss": 0.06402732,
+        "concentration": 1.46628787
+      },
+      {
+        "evaluation": 26,
+        "loss": 0.06402732,
+        "concentration": 1.4662947
+      },
+      {
+        "evaluation": 27,
+        "loss": 0.06402732,
+        "concentration": 1.46628365
+      },
+      {
+        "evaluation": 28,
+        "loss": 0.06402732,
+        "concentration": 1.46629048
+      },
+      {
+        "evaluation": 29,
+        "loss": 0.06402732,
+        "concentration": 1.46628626
+      },
+      {
+        "evaluation": 30,
+        "loss": 13722.25129419,
+        "concentration": 0.0
+      },
+      {
+        "evaluation": 31,
+        "loss": 2.19949459,
+        "concentration": 3.0
+      }
+    ]
+  },
+  "fixed_parameters": {
+    "diffusion": 0.18,
+    "binding_rate": 0.7,
+    "dissociation_rate": 0.04
+  },
+  "reconstruction": {
+    "label": "模型重构图像",
+    "mime": "image/x-portable-pixmap",
+    "width": 48,
+    "height": 6,
+    "base64": "UDYKNDggNgoyNTUK8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vHx8e3u7N/i4r7F0Y+bv2l3uFtpv2l30Y+b4r7F7N/i8e3u8vHx8vLy8vLy8vLy8vLy8vHx8Ovs6tjc3rO70I2ZyX2K0I2Z3rO76tjc8Ovs8vHx8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vHx8e3u7N7h4r3E0I2Zvmd1t1lovmd10I2Z4r3E7N7h8e3u8vHx8vLy8vLy8vLy8vLy8vHx8Ovs6tfb3rK6z4uXyHuIz4uX3rK66tfb8Ovs8vHx8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vHx8e3u7N7h4rzD0IyYvmZ0tlhnvmZ00IyY4rzD7N7h8e3u8vHx8vLy8vLy8vLy8vLy8vHx8Ovs6tfb3rG6z4qWyHqIz4qW3rG66tfb8Ovs8vHx8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vHx8e3u7N7h4rzD0IyYvmZ0tlhnvmZ00IyY4rzD7N7h8e3u8vHx8vLy8vLy8vLy8vLy8vHx8Ovs6tfb3rG6z4qWyHqIz4qW3rG66tfb8Ovs8vHx8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vHx8e3u7N7h4r3E0I2Zvmd1t1lovmd10I2Z4r3E7N7h8e3u8vHx8vLy8vLy8vLy8vLy8vHx8Ovs6tfb3rK6z4uXyHuIz4uX3rK66tfb8Ovs8vHx8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vHx8e3u7N/i4r7F0Y+bv2l3uFtpv2l30Y+b4r7F7N/i8e3u8vHx8vLy8vLy8vLy8vLy8vHx8Ovs6tjc3rO70I2ZyX2K0I2Z3rO76tjc8Ovs8vHx8vLy8vLy8vLy8vLy8vLy8vLy"
+  },
+  "limitations": [
+    "一维简化响应模型，扩散和反应速率按批次固定",
+    "未完成实际试剂定量方法验证，报告不含数字签名",
+    "重构图像不是原始照片，浓度尚未换算为组织质量残留量"
+  ],
+  "content_sha256": "220e57261fd3395341c323ac85593be0b3e4b40f151bf05aead7324c945e1e51"
+}

@@ -1,0 +1,19 @@
+{
+  "system": "组织残留快检系统",
+  "sample_id": 1793586513,
+  "data_mode": "simulation",
+  "known_concentration": 1.5,
+  "estimated_concentration": 1.4663,
+  "unit": "ng/mL",
+  "status": "valid",
+  "packet_bytes": 76,
+  "core_count": 6,
+  "calibration_range": [
+    0.0,
+    3.0
+  ],
+  "calibration_rmse": 0.166172,
+  "core_rmse": 0.248634,
+  "iterations": 27,
+  "content_sha256": "220e57261fd3395341c323ac85593be0b3e4b40f151bf05aead7324c945e1e51"
+}
