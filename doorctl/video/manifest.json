@@ -1,0 +1,13 @@
+{
+  "name": "doorctl_demo.mp4",
+  "bytes": 1175074,
+  "sha256": "a0d97e7104540a4a872725b995e29e25f098a70ad59b2360327789f7d90c8bf2",
+  "git_blob_sha": "b2ed0c4c8ef837a42a050393378dcbe82263ef65",
+  "duration_seconds": 115.666667,
+  "width": 1280,
+  "height": 840,
+  "codec": "H.264",
+  "fps": 12,
+  "audio": "none",
+  "verification": "Browser playback and chapter frame checks passed"
+}
